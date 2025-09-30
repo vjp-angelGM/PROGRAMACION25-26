@@ -115,7 +115,7 @@ public class TEMA2 {
        // Para pedirle datos al usuario lo hacemos con un sout y cuando hacemos entrada de datos, tenemos que 
        // leerla y lo hacemos con la variable declarada para recoger la entrada de datos + next (tipo de dato a leer)
        //La clase Scanner pertenece al paquete Java.util que es el paquete que se debe importar
-       // Tipos de datos que podemos leer: int, short, byte, long.....
+       // To`ps de datos que podemos leer: int, short, byte, long.....
        
        // 8. BUENAS PRÁCTICAS
         // - Nombrar constantes en MAYÚSCULAS
