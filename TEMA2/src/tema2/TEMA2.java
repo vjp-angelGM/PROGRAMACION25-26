@@ -93,6 +93,7 @@ public class TEMA2 {
         // Aritméticos: + - * / %
         // Relacionales: > < >= <= == !=
         // Lógicos: && || !
+        // Unarios: ~ -- ++ - !
         
         // 4. ESTRUCTURA BÁSICA DE UN PROGRAMA EN JAVA
         // - Paquete
@@ -100,8 +101,23 @@ public class TEMA2 {
         // - Atributos
         // - Métodos
         // - Método main (punto de entrada)
+    
+        //5. CONVERSIÓN TIPOS
+        // Conversión implicita: se hace de forma automática entre dos tipos de datos diferentes
+        // Conversión explicita: el programador fuerza la conversión
         
-        // 5. BUENAS PRÁCTICAS
+        //6. PAQUETERÍA Y SENTENCIA IMPORT
+        // Paquete: Conjunto de clases relacionadas entre si y agrupadas bajo un nombre
+        // Sentencia Import: es lo que nos permite utilizar las librerias de JAVA
+       // OJO: NO ES OBLIGATORIO utilizar la sentencia import para importar clases de otros paquetes
+       
+       //7. ENTRADA DE DATOS
+       // Para pedirle datos al usuario lo hacemos con un sout y cuando hacemos entrada de datos, tenemos que 
+       // leerla y lo hacemos con la variable declarada para recoger la entrada de datos + next (tipo de dato a leer)
+       //La clase Scanner pertenece al paquete Java.util que es el paquete que se debe importar
+       // To`ps de datos que podemos leer: int, short, byte, long.....
+       
+       // 8. BUENAS PRÁCTICAS
         // - Nombrar constantes en MAYÚSCULAS
         // - Nombrar variables en camelCase
         // - Usar comentarios para documentar
