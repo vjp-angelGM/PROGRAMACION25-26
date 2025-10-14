@@ -7,6 +7,9 @@ package numerosimpares2;
 /**
  *
  * @author angel
+ * @since 14/10/2025
+ * EJERCICIO 16 
+ * TEMA 3 PROGRAMACIÓN
  */
 public class NumerosImpares2 {
 
