@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package diasemana;
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la libreria Scanner
 /**
  *
  * @author angel
@@ -17,11 +17,11 @@ public class DiaSemana {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int dia;
-        boolean laborable;
-        Scanner entrada = new Scanner (System.in);
-        System.out.println("Introduce un dia de la semana: ");
-        dia = entrada.nextInt();
+        int dia; // Declaramos el dia
+        boolean laborable; // Declaramos como boleano si es laborable o no
+        Scanner entrada = new Scanner (System.in); 
+        System.out.println("Introduce un dia de la semana: "); // Pedimos al usuario que introduzca un día de la semana
+        dia = entrada.nextInt(); // Recogemos el dia y si es del 1 - 5 mostrará laborable
         switch (dia){
             case 1: 
             case 2:
@@ -32,7 +32,7 @@ public class DiaSemana {
                 break;
             case 6:
             case 7: 
-                laborable = false;
+                laborable = false; // Si no es laborable mostrará no laborable 
                 break;
             default : {
                 System.out.println("El dia introducido no es válido.");
