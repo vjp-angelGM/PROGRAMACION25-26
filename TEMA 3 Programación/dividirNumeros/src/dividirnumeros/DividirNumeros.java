@@ -4,7 +4,7 @@
  */
 package dividirnumeros;
 
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la libreria Scanner
 
 /**
  *
@@ -16,10 +16,10 @@ public class DividirNumeros {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int dividendo, divisor, resultado;
-        Scanner entrada = new Scanner(System.in);
+        int dividendo, divisor, resultado; // Declaramos las variables
+        Scanner entrada = new Scanner(System.in); // Hacemos el Scanner
 
-        try {
+        try { // Intentamos dividir los numeros
             System.out.println("Dividendo: ");
             dividendo = entrada.nextInt();
 
@@ -29,7 +29,7 @@ public class DividirNumeros {
             resultado = dividendo / divisor;
             System.out.println(dividendo + " / " + divisor + " = " + resultado);
             
-        } catch (ArithmeticException e) {
+        } catch (ArithmeticException e) { // Si introduce el numero 0 le muestra el mensaje de error
             System.out.println("No puedes dividir por 0 ");
             System.out.println(e);
         }
