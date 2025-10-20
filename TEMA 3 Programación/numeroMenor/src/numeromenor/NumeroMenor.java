@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package numeromenor;
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la libreria Scanner 
 
 /**
  *
@@ -15,17 +15,17 @@ public class NumeroMenor {
      * @param args the command line arguments
      */
    public static void main(String[] args) {
-      int num1, num2, num3, menor;
-      Scanner entrada = new Scanner (System.in);
+      int num1, num2, num3, menor; // Declaramos las variables 
+      Scanner entrada = new Scanner (System.in); // Declaramos el Scanner 
       
-        System.out.println("Introduce el primer número:  ");
-        num1 = entrada.nextInt();
+        System.out.println("Introduce el primer número:  "); // Le pedimos el número al usuario
+        num1 = entrada.nextInt(); // Recogemos el número 
         
-        System.out.println("Introduce el segundo número: ");
-        num2 = entrada.nextInt();
+        System.out.println("Introduce el segundo número: "); // Le pedimos el número al usuario
+        num2 = entrada.nextInt(); // Recogemos el número 
         
-        System.out.println("Introduce el tercer número: ");
-        num3 = entrada.nextInt();
+        System.out.println("Introduce el tercer número: ");// Le pedimos el número al usuario 
+        num3 = entrada.nextInt(); // Recogemos el número 
         
         if (num1 <= num2 && num1 <= num3){
             menor = num1;
