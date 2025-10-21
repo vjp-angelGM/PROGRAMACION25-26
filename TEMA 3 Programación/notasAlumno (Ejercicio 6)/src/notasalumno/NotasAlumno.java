@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package notasalumno;
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la libreria Scanner 
 /**
  *
  * @author angel
@@ -17,12 +17,12 @@ public class NotasAlumno {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int nota;
-        Scanner entrada = new Scanner (System.in);
-        System.out.println("Introduce una nota: ");
-        nota = entrada.nextInt();
+        int nota; // Declaramos la variable 
+        Scanner entrada = new Scanner (System.in); // Declaramos el Scanner
+        System.out.println("Introduce una nota: "); // Pedimos al usuario una nota
+        nota = entrada.nextInt(); // Recogemos la nota 
         
-        switch (nota){
+        switch (nota){ 
             case 0: {
                 System.out.println("Suspenso");
                 break;
@@ -39,7 +39,7 @@ public class NotasAlumno {
                 System.out.println("Suspenso");
                 break;
             }
-            case 4: {
+            case 4: { // Si la nota es 4 es suspenso
                 System.out.println("Suspenso");
                 break;
             }
@@ -47,7 +47,7 @@ public class NotasAlumno {
                 System.out.println("Bien");
                 break;
             }
-            case 6: {
+            case 6: { // Si es 5 o 6 es Bien
                 System.out.println("Bien");
                 break;
             }
@@ -55,7 +55,7 @@ public class NotasAlumno {
                 System.out.println("Notable");
                 break;
             }
-            case 8: {
+            case 8: { // Si es 7 u 8 es Notable 
                 System.out.println("Notable");
                 break;
             }
@@ -63,11 +63,11 @@ public class NotasAlumno {
                 System.out.println("Sobresaliente");
                 break;
             }
-            case 10: {
+            case 10: { // Si es 9 o 10 es sobresaliente 
                 System.out.println("Sobresaliente");
                 break;
             }
-            default: {
+            default: { // Si es otra opcion que no sea una de las definidas arriba le mostramos el mensaje de error
                 System.out.println("Opción introducida no válida");
                 break;
             }
