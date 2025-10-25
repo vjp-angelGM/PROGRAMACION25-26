@@ -12,8 +12,7 @@ import java.util.Scanner;
  */
 public class PositivoNegativo {
 
-    public static int pedirNum() {
-        int n1;
+    public static int PedirNum(int n1) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Por favor introduce un número: ");
         n1 = entrada.nextInt();
@@ -21,10 +20,10 @@ public class PositivoNegativo {
     }
 
     /**
-     * @param args the command line arguments       
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n1 = PositivoNegativo.pedirNum();
+        int n1 = PositivoNegativo.PedirNum(0);
 
         if (n1 > 0) {
             System.out.println("El numero es positivo");
