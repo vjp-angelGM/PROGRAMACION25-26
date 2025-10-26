@@ -4,6 +4,7 @@
  */
 package numeroscreciente;
 import java.util.Scanner;
+import numeroscreciente.burbuja;
 
 /**
  *
@@ -22,6 +23,8 @@ public class NumerosCreciente {
         n2 = entrada.nextInt();
         n3 = entrada.nextInt();
         n4 = entrada.nextInt();
+        
+        burbuja.ordenarBurbuja(n1, n2, n3, n4);
         
     }
     
