@@ -15,6 +15,8 @@ public class Ejercicio1T7 {
     /**
      * @param args the command line arguments
      */
+    
+    //Método que pide al usuario que introduzca 10 números
     public static void rellenarArray(int array[]) {
         Scanner entrada = new Scanner(System.in);
         int i;
@@ -25,6 +27,7 @@ public class Ejercicio1T7 {
         }
     }
 
+    //Método que muestra los números pares que hay dentro del array
     public static void mostrarPares(int array[]) {
         int i;
         System.out.println("\n");
@@ -36,6 +39,7 @@ public class Ejercicio1T7 {
         }
     }
 
+    //Método que muestra el contenido del array 
     public static void mostrarArray(int array[]) {
         int i;
         System.out.println("\n");

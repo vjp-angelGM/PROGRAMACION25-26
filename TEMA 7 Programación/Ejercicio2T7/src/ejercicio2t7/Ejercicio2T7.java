@@ -16,6 +16,8 @@ public class Ejercicio2T7 {
      * @param args the command line arguments
      */
     
+    
+    //Método que pide al usuario 7 números enteros para rellenar el array
     public static void rellenarArray(int array[]) {
         Scanner entrada = new Scanner(System.in);
         int i;
@@ -26,6 +28,7 @@ public class Ejercicio2T7 {
         }
     }
     
+ //Método que muestra el array 
  public static void mostrarArray(int array[]) {
         int i;
         System.out.println("\n");
@@ -35,6 +38,7 @@ public class Ejercicio2T7 {
         }
     }
  
+ //Método que hace el intercambio de posicion de la segunda y cuarta posicion de los valores del array
  public static void intercambio(int array[]){
      int aux;
      System.out.println("\n");
@@ -46,6 +50,7 @@ public class Ejercicio2T7 {
          System.out.println(array[i]+ " ");
      }
  }
+ 
     public static void main(String[] args) {
         int [] array = new int [7];
         rellenarArray(array);
