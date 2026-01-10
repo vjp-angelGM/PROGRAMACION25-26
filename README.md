@@ -1,2 +1,4 @@
-# PROGRAMACION25-26
-Apuntes y Ejercicios 
+# PROGRAMACION 2025-2026
+
+Apuntes y Ejercicios de Programación 
+
