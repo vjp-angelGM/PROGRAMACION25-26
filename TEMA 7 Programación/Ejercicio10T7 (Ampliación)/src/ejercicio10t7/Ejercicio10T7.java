@@ -22,7 +22,7 @@ public class Ejercicio10T7 {
         }
     }
 
-    public static void verArray(int[] array) {
+    public static void verArray(int[] array) { // Mostramos el array con los numeros aleatorios 
         System.out.print("Se han generado los siguientes números: ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
