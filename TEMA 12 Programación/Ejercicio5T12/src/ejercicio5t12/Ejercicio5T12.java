@@ -21,44 +21,43 @@ public class Ejercicio5T12 {
     /**
      * @param args the command line arguments
      */
-    
     public static void addContactoFichero() {
-        Scanner entrada = new Scanner (System.in);
-        try(PrintWriter pw = new PrintWriter (new FileWriter("agenda.txt",true))) {
+        Scanner entrada = new Scanner(System.in);
+        try (PrintWriter pw = new PrintWriter(new FileWriter("agenda.txt", true))) {
             System.out.println("Introduce el nombre: ");
             String nombre = entrada.nextLine();
             System.out.println("Introduce la edad: ");
             int edad = entrada.nextInt();
             System.out.println("Introduce el telefono: ");
             int tel = entrada.nextInt();
-            
-            pw.println(nombre+" , "+edad+" , "+tel);
+            pw.println(nombre + " , " + edad + " , " + tel);
             System.out.println("Contacto agregado correctamente");
-        }catch (IOException e){
-            System.out.println("Error de entrada/salida: "+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error de entrada/salida: " + e.getMessage());
         }
     }
-    
+
     public static void mostrarContenidoFichero() {
-    try (BufferedReader br = new BufferedReader(new FileReader("agenda.txt"))) {
-        String linea;
-        System.out.println("\n--- CONTENIDO DE LA AGENDA ---");
-        while ((linea = br.readLine()) != null) {
-            System.out.println(linea);
+        try (BufferedReader br = new BufferedReader(new FileReader("agenda.txt"))) {
+            String linea;
+            System.out.println("\n--- CONTENIDO DE LA AGENDA ---");
+            while ((linea = br.readLine()) != null) {
+                System.out.println(linea);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: El archivo 'agenda.txt' aún no ha sido creado.");
+        } catch (IOException e) {
+            System.out.println("Error al leer el fichero: " + e.getMessage());
         }
-    } catch (FileNotFoundException e) {
-        System.out.println("Error: El archivo 'agenda.txt' aún no ha sido creado.");
-    } catch (IOException e) {
-        System.out.println("Error al leer el fichero: " + e.getMessage());
     }
-}
-    public static void main(String[] args)  {
-        Scanner entrada = new Scanner (System.in);
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
         int opcion;
-        do{
+        do {
+            System.out.println("");
             System.out.println(" ======== MENU ========");
             System.out.println("=== Bienvenido al menú de la agenda ===");
-            System.out.println("Elige una de las siguientes opciones: ");
             System.out.println("1. Añadir un contacto al fichero de agenda");
             System.out.println("2. Mostrar el contenido del fichero ");
             System.out.println("3. Salir del programa");
@@ -66,12 +65,12 @@ public class Ejercicio5T12 {
             System.out.println("Selecciona una opcion: ");
             opcion = entrada.nextInt();
             entrada.nextLine();
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     addContactoFichero();
                     break;
                 case 2:
-//                    mostrarContenidoFichero();
+                    mostrarContenidoFichero();
                     break;
                 case 3:
                     System.out.println("Saliendo del programa. Hasta pronto");
@@ -79,7 +78,7 @@ public class Ejercicio5T12 {
                 default:
                     System.out.println("Opción introducida no válida");
             }
-        }while (opcion !=3);
+        } while (opcion != 3);
     }
-    
+
 }
